@@ -1,26 +1,80 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: block;
+    margin: 0%;
+}
+
+/* grid setup */
 .container {
+    height: 100%;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 6fr 0.5fr;
     grid-template-areas:
         "header header"
         "nav main"
         "footer footer";
 }
 
+/* elements in grid */
 .header {
     grid-area: header;
+    padding: 20px;
+    background-color: grey;
+    color: white;
 }
 
 .main {
     grid-area: main;
+    padding: 20px;
+    height: auto;
+    background-color: #d3d3d3;
+    display: flex;
 }
 
 .nav {
     grid-area: nav;
+    padding-top: 20px;
+    background-color: #f0eeee;
 }
 
 .footer {
     grid-area: footer;
+    position: flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    text-align: right;
+}
+
+/* for inside padding in an element */
+#text {
+    padding: 10px;
+}
+
+/* nav styling */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+  }
+  
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #555;
+    color: white;
 }
 
