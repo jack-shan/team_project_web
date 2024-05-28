@@ -9,6 +9,10 @@ body {
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+h2 {
+    font-size: 24px;
+}
+
 /* grid setup */
 .container {
     height: 100%;
