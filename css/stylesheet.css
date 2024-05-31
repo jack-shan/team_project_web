@@ -113,6 +113,16 @@ h2 {
     text-align: right;
 }
 
+.images {
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-around;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 /* for inside padding in an element */
 #text {
     padding: 10px;
